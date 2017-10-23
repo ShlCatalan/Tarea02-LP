@@ -19,7 +19,7 @@ arbol 0 = tronco
 arbol n = Pictures [tronco,
                     Translate 0 300 menor,
                     Translate 0 240 (Rotate 20    menor),
-                    Translate 0 180 (Rotate (-20) menor),
+                    Translate 0 240 (Rotate (-20) menor),
                     Translate 0 120 (Rotate 40    menor),
-                    Translate 0  60 (Rotate (-40) menor) ]
+                    Translate 0 120 (Rotate (-40) menor) ]
     where menor = Scale 0.5 0.5 (arbol (n-1))
